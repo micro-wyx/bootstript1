@@ -1,0 +1,16 @@
+@media screen and (max-width:767px){
+    #container p{
+        color:purple;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    #container p{
+        color:blue;
+    }
+}
+@media screen and (min-width:1199px){
+    #container p{
+        color:red;
+    }
+}
+

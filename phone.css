@@ -1,0 +1,4 @@
+/*模拟电话屏幕尺寸 小于等于767px*/
+#container  p{
+    background-color:#e4393c;
+}
