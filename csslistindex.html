@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1,user=scalable=no">
+    <!--2 跨ie浏览器兼容性-->
+    <meta http-equiv="x-ua-compatible"    content="IE=edge">
+    <!--csshack引入两个兼容文件-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.mim.js">
+    </script>
+    <script src="js/respond.min.js">
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        #parent{
+            border:1px solid #e4393c;
+        }
+        #parent div{
+            width:200px;
+            height:200px;
+            border:1px solid #000;
+        }
+    </style>
+    <title>全局的css列表</title>
+</head>
+<body>
+<h1 >不带标识的列表</h1>
+    <ul class="list-unstyled">
+        <li>西游记</li>
+        <li>水浒传</li>
+        <li>红楼梦</li>
+        <li>三国演义</li>
+    </ul>
+<h1 >行内列表</h1>
+    <ul class="list-inline">
+        <li>西游记</li>
+        <li>水浒传</li>
+        <li>红楼梦</li>
+        <li>三国演义</li>
+    </ul>
+<h1 >定义列表</h1>
+    <dl class="dl-horizontal">
+        <dt>四大名著</dt>
+        <dd>西游记</dd>
+        <dd>水浒传</dd>
+        <dd>红楼梦</dd>
+        <dd>三国演义</dd>
+    </dl>
+<h1>图片</h1>
+    <img class="img-rounded" src="image/5.jpeg" alt="图片１">
+    <img class="img-circle" src="image/5.jpeg" alt="图片2">
+    <img class="img-thumball" src="image/5.jpeg" alt="图片3">
+    <img class="img-responsive" src="image/5.jpeg" alt="图片4">
+    <h1>表格</h1>
+       <table class="table">
+              <tr>
+                  <td>姓名</td>
+                  <td>性别</td>
+                  <td>学历</td>
+              </tr>
+              <tr>
+                  <td>小明</td>
+                  <td>女</td>
+                  <td>本科</td>
+              </tr>
+              <tr>
+                  <td>小红</td>
+                  <td>女</td>
+                  <td>本科</td>
+              </tr>
+          </table>
+          <table class=" table table-striped">
+              <tr>
+                  <td>姓名</td>
+                  <td>性别</td>
+                  <td>学历</td>
+              </tr>
+              <tr>
+                  <td>小明</td>
+                  <td>女</td>
+                  <td>本科</td>
+              </tr>
+              <tr>
+                  <td>小红</td>
+                  <td>女</td>
+                  <td>本科</td>
+              </tr>
+          </table>
+          <table class="table table-hover">
+              <tr>
+                  <td>姓名</td>
+                  <td>性别</td>
+                  <td>学历</td>
+              </tr>
+              <tr>
+                  <td>小明</td>
+                  <td>女</td>
+                  <td>本科</td>
+              </tr>
+              <tr>
+                  <td>小红</td>
+                  <td>女</td>
+                  <td>本科</td>
+              </tr>
+          </table>
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>学历</td>
+            </tr>
+            <tr>
+                <td>小明</td>
+                <td>女</td>
+                <td>本科</td>
+            </tr>
+            <tr>
+                <td>小红</td>
+                <td>女</td>
+                <td>本科</td>
+            </tr>
+        </table>
+    </div>
+ <div class="container">
+         <p class="text-danger bg-danger text-left">
+             本人前端菜鸟一枚，在学习 CSS 过程中发现网上流传的教程参差不齐，要么内容不够详细，要么方法就是错的，按照它给出的方法不能实现我想要的目的。于是自己决定写一篇经验。如有错误的地方，希望各位大神能够指出
+     </p>
+     <p class="text-success bg-success text-right">
+         本人前端菜鸟一枚，在学习 CSS 过程中发现网上流传的教程参差不齐，要么内容不够详细，要么方法就是错的，按照它给出的方法不能实现我想要的目的。于是自己决定写一篇经验。如有错误的地方，希望各位大神能够指出
+     </p>
+     <p class="text-warning bg-warning text-center">
+         本人前端菜鸟一枚，在学习 CSS 过程中发现网上流传的教程参差不齐，要么内容不够详细，要么方法就是错的，按照它给出的方法不能实现我想要的目的。于是自己决定写一篇经验。如有错误的地方，希望各位大神能够指出
+     </p>
+     <p class="text-info bg-info text-justify">
+         本人前端菜鸟一枚，在学习 CSS 过程中发现网上流传的教程参差不齐，要么内容不够详细，要么方法就是错的，按照它给出的方法不能实现我想要的目的。于是自己决定写一篇经验。如有错误的地方，希望各位大神能够指出
+     </p>
+     <p class="text-primary bg-primary">
+         本人前端菜鸟一枚，在学习 CSS 过程中发现网上流传的教程参差不齐，要么内容不够详细，要么方法就是错的，按照它给出的方法不能实现我想要的目的。于是自己决定写一篇经验。如有错误的地方，希望各位大神能够指出
+     </p>
+    <button class="close"><span>&times</span></button>
+     </div>
+    <span class="caret"></span>
+    <div class="container">
+        <div id="parent" class="clearfix">
+        <div class="c1 center-block">１</div>
+        <div class="c2 pull-left">２</div>
+        <div class="c3 pull-right">３</div>
+        </div>
+    </div>
+<link rel="stylesheet" href="js/jquery-1.11.3.js">
+<link rel="stylesheet" href="js/bootstrap.js">
+</body>
+</html>
