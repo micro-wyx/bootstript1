@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conten="width=device-width,      initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible"      content="IE=edge">
+    <!--[if lt IE9]>
+        <script  src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        div{
+            border:1px solid #000;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+       <h1>全局样式-栅格布局</h1>
+        <h3>一行只放置一列</h3>
+        <div class="row">
+            <div class="col-md-1">MD1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">MD2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">MD3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">MD4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">MD5</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">MD6</div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">MD7</div>
+        </div>
+        <h3>一行中放置多列</h3>
+        <div class="row">
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+            <div class="col-md-1">MD1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">MD4</div>
+            <div class="col-md-2">MD2</div>
+            <div class="col-md-6">MD6</div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 ">MD1</div>
+            <div class="col-md-1  col-md-offset-10">MD2</div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootlint.js"></script>
+    <script>
+        bootlint.showLintReportForCurrentDocument([]);
+    </script>
+</body>
+</html>
