@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" >
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.mim.js">
+    </script>
+    <script src="js/respond.min.js">
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        #top li{ font-weight: bold;
+                   color:#fff;
+        }
+        #top{
+            background-color:#034D50;
+            border-radius:5px;
+        }
+        #left-list{
+            background:#530B57;
+            border-radius:5px;
+            padding:15px 10px;
+
+        }
+        #left-list li{
+            background:#fff;
+            font-size:1.5em;
+            margin-bottom:5px;
+        }
+        #midde{
+            background-color:orange;
+            margin-top:10px;
+        }
+    </style>
+    <title>栅格布局系统嵌套</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header id="top">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <ul class="list-unstyled list-inline">
+                        <li>首页</li>
+                        <li>影集</li>
+                        <li>活动</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-md-offset-6 col-sm-6 col-xs-12">
+                    <input type="text" class="form-control">
+                </div>
+             </div>
+        </header>
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-12">
+                <ul class="list-unstyled" id=left-list>
+                    <li>豆蔻年华</li>
+                    <li>花样青春</li>
+                    <li>激情岁月</li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-sm-9 col-xs-12" id="midde">
+                <div class="row" >
+                    <div class="col-sm-3 col-xs-6">
+                        <img  class="img-responsive" src="image/7.jpg" alt="图片1">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img class="img-responsive" src="image/8.jpg" alt="图片2">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img class="img-responsive" src="image/9.jpg" alt="图片3">
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <img class="img-responsive" src="image/10.jpg" alt="图片4">
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-12">
+                      <p id="content">
+                          Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text/markup), or is included through alternative means, such as additional text hidden with the .sr-only class
+                      </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-sm hidden-xs">
+                <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text/markup), or is included through alternative means, such as additional text hidden with the .sr-only class</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootlint.js"></script>
+    <script>
+        bootlint.showLintReportForCurrentDocument([]);
+    </script>
+</body>
+</html>
