@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口 -->
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1,user-scalable=no">
+    <!--2 跨ie浏览器兼容性-->
+    <meta http-equiv="x-ua-compatible"    content="IE=edge">
+    <!--csshack引入两个兼容文件-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.mim.js">
+        </script>
+        <script src="js/respond.min.js">
+        </script>
+   <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+        <title>标签页</title>
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li>
+            <a href="#tab1" data-toggle="tab">西游记</a>
+        </li>
+        <li>
+            <a href="#tab2" data-toggle="tab">水浒传</a>
+        </li>
+        <li >
+            <a href="#tab3" data-toggle="tab">三国演义</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane" id="tab1">
+            <div class="well">
+                该剧讲述的是孙悟空、猪八戒、沙僧辅保大唐高僧玄奘去西天取经，师徒四人一路抢滩涉险，降妖伏怪，历经八十一难，取回真经，终修正果的故事。
+            </div>
+        </div>
+        <div class="tab-pane" id="tab2">
+            <div class="well">
+                《水浒传》，是中国四大名著之一，全书描写北宋末年以宋江为首的108位好汉在梁山聚义，以及聚义之后接受招安、四处征战的故事。
+            </div>
+        </div>
+        <div class="tab-pane" id="tab3">
+            <div class="well">
+                《三国演义》是中国古典四大名著之一，是中国第一部长篇章回体历史演义小说，全名为《三国志通俗演义》（又称《三国演义》），作者是元末明初的著名小说家罗贯中。
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--引入jquery/bootdtrap js文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+    bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>
