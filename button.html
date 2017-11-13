@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口 -->
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1,user-scalable=no">
+    <!--2 跨ie浏览器兼容性-->
+    <meta http-equiv="x-ua-compatible"    content="IE=edge">
+    <!--csshack引入两个兼容文件-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.mim.js">
+        </script>
+        <script src="js/respond.min.js">
+        </script>
+   <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>按钮监听事件</title>
+</head>
+<body>
+<div class="container">
+    <button id="btn" type="button" class="btn btn-danger" data-loading-text="业务忙请等待">登录</button>
+    <h3>复选按钮</h3>
+    <div class="btn-group" data-toggle="buttons">
+        <lable class="btn btn-success">
+            <input type="checkbox">吃
+        </lable>
+        <lable class="btn btn-success">
+            <input type="checkbox">喝
+        </lable>
+        <lable class="btn btn-success">
+            <input type="checkbox">玩
+        </lable>
+        <lable class="btn btn-success">
+            <input type="checkbox">乐
+        </lable>
+    </div>
+    <h3>单选按钮</h3>
+    <div class="btn btn-group" data-toggle="buttons">
+        <label class="btn btn-danger">
+            <input type="radio" name="btnradio">快退
+        </label>
+        <label class="btn btn-danger">
+            <input type="radio" name="btnradio">播放
+        </label>
+        <label class="btn btn-danger">
+            <input type="radio" name="btnradio">快进
+        </label>
+        <label class="btn btn-danger">
+            <input type="radio" name="btnradio">暂停
+        </label>
+    </div>
+</div>
+
+<!--引入jquery/bootdtrap js文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+    bootlint.showLintReportForCurrentDocument([]);
+</script>
+<script>
+ $(function(){
+      $("#btn").click(function () {
+          $(this).button("loading");//按钮无法点击
+　　　   window.alert("我是一个警告框");
+          $(this).button("reset");
+      });
+   });
+</script>
+</body>
+</html>
