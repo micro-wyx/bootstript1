@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!--[IF lt IE9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endIf]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body{
+            padding-top:50px;
+        }
+    </style>
+    <title>组件</title>
+</head>
+<body>
+        <nav class="navbar navbar-default navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#mycol" class="navbar-brand">WEB</a>
+                    <button  type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#mycol">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="mycol">
+                        <ul class="nav navbar-nav" >
+                            <li class="active"><a href="#">主页</a></li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                分类
+                                <span class="caret"></span>
+                                </a>
+                                <!--下拉菜单-->
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">HTML5</a></li>
+                                    <li><a href="#">CSS3</a></li>
+                                    <li><a href="#">Javascript</a></li>
+                                    <li><a href="#">Ajax</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">关于</a></li>
+                        </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                        <button type="button" class="btn btn-success">登录</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+
+    <div class="container">
+        <div class="row">
+         <div class="col-sm-3 hidden-xs">
+             <div class="panel panel-default">
+                 <div class="panel-heading">
+                     <h4 class="panel-title">个人资料</h4>
+                 </div>
+                 <div class="panel-body">
+                     <img src="image/11.jpg"  class="img-responsive img-circle" alt="">
+                 </div>
+             </div>
+             <ul class="list-group">
+                 <li class="list-group-item">HTML5</li>
+                 <li class="list-group-item">CSS3</li>
+                 <li class="list-group-item">Javascript</li>
+                 <li class="list-group-item">jQuery</li>
+                 <li class="list-group-item">Ajax</li>
+                 <li class="list-group-item">Node.js</li>
+             </ul>
+         </div>
+         <div class="col-sm-9 col-xs-12" >
+             <!--路径导航-->
+             <ul class="breadcrumb">
+                 <li><a href="#">主页</a></li>
+                 <li><a href="#">HTML5</a></li>
+                 <li>表单2.0</li>
+             </ul>
+             <!--二级标题-->
+             <h1>表单2.0新特性</h1>
+             <!--水井-->
+             <div class="well">
+                 HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式
+             </div>
+             <!--普通文本-->
+             <p>CSS即层叠样式表（Cascading StyleSheet）。 在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。以前的规范作为一个模块实在是太庞大而且比较复杂，所以，把它分解为一些小的模块，更多新的模块也被加入进来。这些模块包括： 盒子模型、列表模块、超链接方式 、语言模块 、背景和边框 、文字特效 、多栏布局等</p>
+             <p>JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。</p>
+             <p>jQuery 是一个 JavaScript 库。
+                 jQuery 极大地简化了 JavaScript 编程。
+                 jQuery 很容易学习。</p>
+             <p>
+                 AJAX即“Asynchronous Javascript And XML”（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术。AJAX = 异步 JavaScript和XML（标准通用标记语言的子集）。AJAX 是一种用于创建快速动态网页的技术。AJAX 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
+  传统的网页（不使用 AJAX）如果需要更新内容，必须重载整个网页页面。
+             </p>
+             <!--媒体-->
+             <div id="coments">
+                 <h3>评论列表</h3>
+                 <div class="media">
+                     <div class="media-left">
+                         <img style="width:100px;height:100px;"src="image/22.jpg" alt="" class="img-circle ">
+                     </div>
+                     <div class="media-body">
+                         Bootstrap，来自 Twitter，是目前很受欢迎的前端框架
+                     </div>
+                 </div>
+                 <div class="media">
+                     <div class="media-left">
+                         <img style="width:100px;height:100px;" src="image/33.jpg" alt="" class="img-circle ">
+                     </div>
+                     <div class="media-body">
+                         万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言
+                     </div>
+                 </div>
+                 <div class="media">
+                     <div class="media-left">
+                         <img style="width:100px;height:100px;" src="image/44.jpg" alt="" class="img-circle ">
+                     </div>
+                     <div class="media-body">
+                         Web前端开发，主要是利用(X)HTML/CSS/JavaScript/Flash等各种Web技术进行客户端产品的开发
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootlint.js"></script>
+    <script>
+        bootlint.showLintReportForCurrentDocument([]);
+    </script>
+</body>
+</html>
