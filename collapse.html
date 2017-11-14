@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口 -->
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1,user-scalable=no">
+    <!--2 跨ie浏览器兼容性-->
+    <meta http-equiv="x-ua-compatible"    content="IE=edge">
+    <!--csshack引入两个兼容文件-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.mim.js">
+        </script>
+        <script src="js/respond.min.js">
+        </script>
+   <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+        <title>折叠效果</title>
+</head>
+<body>
+    <div class="container">
+        <a href="#mycollapse1" data-toggle="collapse">Html</a>
+        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#mycollapse２">CSS3</button>
+    </div>
+    <div class="collapse" id="mycollapse1">
+        <div class="well">
+            HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas 标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式
+        </div>
+    </div>
+    <div class="collapse" id="mycollapse２">
+        <div class="well">
+            CSS即层叠样式表（Cascading StyleSheet）。 在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。以前的规范作为一个模块实在是太庞大而且比较复杂，所以，把它分解为一些小的模块，更多新的模块也被加入进来。这些模块包括： 盒子模型、列表模块、超链接方式 、语言模块 、背景和边框 、文字特效 、多栏布局等
+        </div>
+    </div>
+    <h3>使用面板完成折叠效果</h3>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title" data-target="#mycp" data-toggle="collapse">
+                Javascript
+            </h4>
+        </div>
+        <div class="collapse panel-collapse" id="mycp">
+            <div class="panel-body" >
+                <div class="well">
+                    JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为
+                    JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML
+                    （标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+                </div>
+            </div>
+            <div class="panel-footer">底部</div>
+        </div>
+        <h3>Collapse-Accordion</h3>
+        <div class="panel-group" id="accordion">
+            <!--面板一-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#panel1" data-toggle="collapse" data-parent="#accordion">panel</a>
+                    </h4>
+                </div>
+                <div class="collapse panel-collapse" id="panel1">
+                    <div class="panel-body">
+                        open panel1
+                    </div>
+                </div>
+            </div>
+            <!--面板二-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#panel2" data-toggle="collapse" data-parent="#accordion">pane2</a>
+                    </h4>
+                </div>
+                <div class="collapse panel-collapse" id="panel2">
+                    <div class="panel-body">
+                        open panel2
+                    </div>
+                </div>
+            </div>
+            <!--面板三-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#panel3" data-toggle="collapse" data-parent="#accordion">pane3</a>
+                    </h4>
+                </div>
+                <div class="collapse panel-collapse" id="panel3">
+                    <div class="panel-body">
+                        open panel3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4>手风琴效果面板</h4>
+        <div class="panel-group" id="myaccod">
+            <div class="panel panel-success">
+               <div class="panel-heading">
+                   <h4 class="panel-title">
+                       <a href="#accor1" data-toggle="collapse" data-parent="#myaccod">西游记</a>
+                   </h4>
+               </div>
+                <div class="collapse panel-collapse" id="accor1">
+                    <div class="panel-body">
+                        <div class="well">
+                            <p>该剧讲述的是孙悟空、猪八戒、沙僧辅保大唐高僧玄奘去西天取经，师徒四人一路抢滩涉险，降妖伏怪
+                                ，历经八十一难，取回真经，终修正果的故事
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-danger">
+                 <div class="panel-heading">
+                     <h4 class="panel-title">
+                         <a href="#accor2" data-toggle="collapse" data-parent="#myaccod">三国演义</a>
+                     </h4>
+                 </div>
+                <div class="collapse panel-collapse" id="accor2">
+                    <div class="panel-body">
+                        <div class="well">
+                            <p>
+                                《三国演义》是中国古典四大名著之一，是中国第一部长篇章回体历史演义小说，全名为《三国志通俗演义》
+                                （又称《三国演义》），作者是元末明初的著名小说家罗贯中
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#accor3" data-toggle="collapse" data-parent="#myaccod">红楼梦</a>
+                    </h4>
+                </div>
+                <div class="collapse panel-collapse" id="accor3">
+                    <div class="panel-body">
+                        <div class="well">
+                            <p>《红楼梦》，中国古典四大名著之首，清代作家曹雪芹创作的章回体长篇小说[1]  ，
+                                又名《石头记》《金玉缘》。此书分为120回“程本”和80回“脂本”两种版本系统
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--引入jquery/bootdtrap js文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+    bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>
